@@ -843,4 +843,8 @@ ul.license li span {
   .headerRow .center .btn {
     display: none;
   }
+
+  .contentBox {
+    padding: 0px 6px;
+  }
 }
