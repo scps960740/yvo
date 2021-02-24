@@ -803,12 +803,12 @@
 
             function onclose(number) {
                 return () => {
-                    location.href = `https://${location.hostname}/index.html#b${number}`
+                    location.href = `https://${location.hostname}/yvo/index.html#b${number}`
                 }
             }
 
             function open() {
-                window.history.pushState(null, "", `https://${location.hostname}/index.html?section=${Math.random()}`)
+                window.history.pushState(null, "", `https://${location.hostname}/yvo/index.html?section=${Math.random()}`)
             }
 
 
