@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
 
 
     <link rel="stylesheet" href="./assets/css/lc_lightbox.css">
@@ -800,14 +800,15 @@
                 fullscreen: true,
             }
 
+
             function onclose(number) {
                 return () => {
-                    location.href = `http://127.0.0.1:5501/index.html#b${number}`
+                    location.href = `https://${location.hostname}/index.html#b${number}`
                 }
             }
 
             function open() {
-                window.history.pushState(null, "", `http://127.0.0.1:5501/index.html?section=${Math.random()}`)
+                window.history.pushState(null, "", `https://${location.hostname}/index.html?section=${Math.random()}`)
             }
 
 
@@ -880,13 +881,6 @@
                 item.classList.add("custom_elem");
             }
         })
-
-
-
-        // setTimeout(() => {
-        //     location.href = "http://127.0.0.1:5501/index.html?test=100"
-        //     console.log(">>>");
-        // }, 3000)
     </script>
 
     <!-- GetButton.io widget -->
