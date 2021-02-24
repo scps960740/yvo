@@ -847,4 +847,8 @@ ul.license li span {
   .contentBox {
     padding: 0px 6px;
   }
+
+  main .mainRow .contentBox {
+    height: 80vh;
+  }
 }
