@@ -41,12 +41,16 @@
 
                 </div>
                 <div class="right">
-                    <button class="btn">
+                    <!-- <button class="btn">
                         <img src="./img/icon_06.svg">
                         <span>已說讚</span>
-                    </button>
+                    </button> -->
                     <img src="./img/photo.png" class="photo">
                     <span>Guo1g</span>
+                    <button class="btn i18nBtn" id="i18nBtn">
+                        <!-- <img src="./img/icon_06.svg"> -->
+                        <span>EN</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -89,11 +93,12 @@
                             <div class="title">
                                 <i class="fas fa-info-circle" style="font-size: 25px;"></i> 關於我
                             </div>
-                            <p>Hi! My name is Yi chun ,Kuo.,please also feel free call me, Yvonne.
+                            <p> 嗨！我是郭怡君,Yvonne！
                                 <br>
-                                As a senior designer working in Wunderman Thomspson for more than 2 years, I've been
-                                managing design projects from diverse industries. During extracurricular time, I've also
-                                took part in UI/UX design cases to broaden my experiences.
+                                目前在偉門智威公司 擔任Senior Designer，由於公司屬廣告代理商，因此大量接觸了不同產業的品牌設計案。
+                                過程中，能依不同品牌的調性，發展適合的設計風格，並於執行提案的過程中，強化自身整合的能力。
+                                <br>
+                                在週末，會利用空閒時間與前端工程師合作，透過不同網站設計案的實戰經驗，提升UI/UX的能力，更利用線上課程自學，加強網站的專業知識。
                             </p>
                         </div>
 
@@ -439,7 +444,7 @@
                             </div>
 
                             <div class="postDesc">
-                                · 藉由遊戲加深使用者對新產品的印象。
+                                · 運用活潑的視覺及簡單的遊戲與經銷商溝通，加深他們對產品形象的記憶與了解。
                             </div>
                             <div class="postDesc">
                                 · 溝通新產品在口味、價格的資訊。
@@ -453,7 +458,7 @@
                                 · 經銷商人員/30~60歲
                             </div>
                             <div class="postDesc">
-                                · 了解產品及販售，為其主要的工作內容。
+                                · 休息時間較為瑣碎，較無耐心接受新產品資訊，喜愛以簡單遊戲作為消遣娛樂。
                             </div>
                             <div class="postHr"></div>
                             <div class="postHashTags"><span class="postTag">#微軟正黑體</span><span
@@ -709,7 +714,7 @@
                                 <span>遊戲App視覺設計;BTL製作物</span>
                             </li>
                             <li>
-                                <p>Orei-B</p>
+                                <p>Oral-B</p>
                                 <span>一頁式活動網頁/協助設計</span>
                             </li>
                             <li>
@@ -803,12 +808,12 @@
 
             function onclose(number) {
                 return () => {
-                    location.href = `https://${location.hostname}/yvo/index.html#b${number}`
+                    location.href = `https://scps960740.github.io/yvo/index.html#b${number}`
                 }
             }
 
             function open() {
-                window.history.pushState(null, "", `https://${location.hostname}/yvo/index.html?section=${Math.random()}`)
+                window.history.pushState(null, "", `https://scps960740.github.io/yvo/index.html?section=${Math.random()}`)
             }
 
 
@@ -880,6 +885,11 @@
             if (item.className === "elem6") {
                 item.classList.add("custom_elem");
             }
+        })
+
+        const i18nBtn = document.getElementById("i18nBtn")
+        i18nBtn.addEventListener("click", function() {
+            location.href = `https://scps960740.github.io/yvo_en/index.html`
         })
     </script>
 

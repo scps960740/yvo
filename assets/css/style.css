@@ -60,6 +60,12 @@ header {
   justify-content: space-between;
 }
 
+.i18nBtn {
+  margin-left: 15px;
+  font-size: 16px;
+  width: 75px;
+}
+
 .headerRow .left,
 .headerRow .right {
   width: 300px;
@@ -67,6 +73,7 @@ header {
   height: 70px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .headerRow .left {
@@ -162,11 +169,11 @@ header {
   align-items: center;
   justify-content: center;
   color: #5863b6;
-  font-size: 13px;
+  /* font-size: 13px; */
   font-weight: bold;
   height: 35px;
   border-radius: 18px;
-  margin-right: 15px;
+  /* margin-right: 15px; */
   border: 1px solid #fff;
 }
 
@@ -317,8 +324,6 @@ main .mainRow .contentBox {
 
 .mainRow .about p {
   color: #999;
-  word-break: break-all;
-  word-break: keep-all;
 }
 
 .mainRow .list .box {
